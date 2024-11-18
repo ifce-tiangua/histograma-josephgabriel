@@ -70,6 +70,9 @@ PreencherHistograma(histograma, V[i], i);
 }
 
 imprimir_histograma(histograma, V, C);
+
+free(histograma);
+
 return 0;
 
 }
