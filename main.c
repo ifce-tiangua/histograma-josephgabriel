@@ -71,7 +71,7 @@ PreencherHistograma(histograma, V[i], i);
 
 imprimir_histograma(histograma, V, C);
 
-free(histograma[i]);
+free(histograma);
 
 return 0;
 
