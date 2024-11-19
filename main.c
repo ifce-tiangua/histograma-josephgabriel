@@ -14,7 +14,8 @@ void imprimir_histograma(char *h[], int V[], int C) {
             printf("%c", h[i][j]);
         }
 
-        printf("\\n");
+        if (i < C - 1) {  
+            printf("\\n");}
 
     }
 }
