@@ -13,7 +13,7 @@ void imprimir_histograma(char *h[], int V[], int C) {
         for (int j = 0; j < V[i]; j++) {
             printf("%c", h[i][j]);
         }
-        printf("\n");
+        printf(" \n");
         
     }
 }
