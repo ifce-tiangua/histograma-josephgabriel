@@ -37,7 +37,7 @@ int main() {
 
     imprimir_histograma(histograma, V, C);
 
-    for (int i = 0; i < C; i++) {A
+    for (int i = 0; i < C; i++) {
         if (histograma[i] != NULL) {
             free(histograma[i]);
         }
