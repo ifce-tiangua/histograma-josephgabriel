@@ -11,13 +11,10 @@ void imprimir_histograma(char *h[], int V[], int C) {
     for (int i = 0; i < C; i++) {
         printf("%d ", V[i]);
 
-        if (h[i] == NULL) {
-            printf("vazio");
-        } else {
             for (int j = 0; j < V[i]; j++) {
                 printf("%c", h[i][j]);
             }
-        }
+
 
         if (i < C - 1) {
             printf("\\n");
@@ -31,6 +28,10 @@ int main() {
 
     int V[C];
     char *histograma[C];
+
+    if (C == NULL) {
+            printf("vazio");
+        }
 
     for (int i = 0; i < C; i++) {
         scanf("%d", &V[i]);
