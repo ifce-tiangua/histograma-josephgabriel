@@ -71,7 +71,11 @@ PreencherHistograma(histograma, V[i], i);
 
 imprimir_histograma(histograma, V, C);
 
-free(histograma);
+for(int i = 0; i < C; i++) {
+	if(histograma[i] != NULL {
+		free(histograma[i]);
+	}
+}
 
 return 0;
 
