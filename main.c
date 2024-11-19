@@ -8,15 +8,26 @@ void PreencherHistograma(char *h[], int V, int C) {
 }
 
 void imprimir_histograma(char *h[], int V[], int C) {
+    int vazio = 1;
     for (int i = 0; i < C; i++) {
-        printf("%d ", V[i]);
-        for (int j = 0; j < V[i]; j++) {
-            printf("%c", h[i][j]);
+        if (V[i] > 0) {
+            vazio = 0;
+            break;
         }
+    }
 
-        if (i < C - 1) {  
-            printf("\\n");}
-
+    if (vazio) {
+        printf("vazio\n");
+    } else {
+        for (int i = 0; i < C; i++) {
+            printf("%d ", V[i]);
+            for (int j = 0; j < V[i]; j++) {
+                printf("%c", h[i][j]);
+            }
+            if (i < C - 1) {
+                printf("\n");
+            }
+        }
     }
 }
 
